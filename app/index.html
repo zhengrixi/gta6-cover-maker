@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Shores — GTA-Style Cover Maker</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="app">
+  <aside class="controls">
+    <h1>NEON SHORES</h1>
+    <p class="tag">Your photos, a caption, and out comes a Vice City poster. Everything stays on your machine.</p>
+
+    <section class="group">
+      <h2>Layout</h2>
+      <div id="layouts" class="chips"></div>
+    </section>
+
+    <section class="group">
+      <h2>Photo <span id="panelName"></span></h2>
+      <div id="panels" class="chips"></div>
+      <label class="file">Photo for this panel <input id="photo" type="file" accept="image/*"></label>
+      <div class="row">
+        <button id="samplePier" type="button">Sample: the pier</button>
+        <button id="sampleBlvd" type="button">Sample: the boulevard</button>
+      </div>
+      <button id="fillAll" type="button">Use this photo in every panel</button>
+      <label>Panel filter
+        <select id="panelFilter"></select>
+      </label>
+      <p class="hint">Drag the cover to move this panel's photo. Scroll over it to zoom.</p>
+    </section>
+
+    <section class="group">
+      <h2>Words &amp; grade</h2>
+      <label>Title <input id="title" type="text" maxlength="24" value="NEON SHORES"></label>
+      <label>Subtitle <input id="subtitle" type="text" maxlength="40" value="VICE CITY NIGHTS"></label>
+      <label>Title colour
+        <select id="titleColor"></select>
+      </label>
+      <label>Cover grade
+        <select id="grade"></select>
+      </label>
+    </section>
+
+    <section class="group">
+      <h2>Export</h2>
+      <label>Post size
+        <select id="size"></select>
+      </label>
+      <button id="export" type="button" class="primary">Export PNG</button>
+      <p id="status" role="status"></p>
+    </section>
+  </aside>
+  <section class="stage">
+    <canvas id="cover" width="1080" height="1350" aria-label="Your cover, live preview"></canvas>
+  </section>
+</main>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
