@@ -1,0 +1,6 @@
+[
+  { "name": "1-cover.jpg", "query": "?shot=cover", "w": 1280, "h": 720 },
+  { "name": "2-editor.jpg", "query": "?shot=editor", "w": 1280, "h": 1024 },
+  { "name": "3-cover.jpg", "query": "?shot=cover2", "w": 1024, "h": 1280 },
+  { "name": "4-cover.jpg", "query": "?shot=cover3", "w": 1080, "h": 1080 }
+]
